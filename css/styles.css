@@ -9,12 +9,6 @@ body {
     display: flex;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
 .background-left {
     width: 20%;
     height: 100%;
@@ -28,7 +22,6 @@ ul {
 
     display: flex;
     align-items: center;
-
 }
 
 .background-right {
@@ -44,6 +37,10 @@ ul {
     border-radius: 25px;
 }
 
-.card-left {
+input + p {
+    display: none;
+}
 
+input:checked + p {
+    display: block;
 }
