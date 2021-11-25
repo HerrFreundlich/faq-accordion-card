@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAQ Accordion Card</title>
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <!--CSS Style Sheet-->
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -17,46 +21,51 @@
     <div class="card">
 
       <div class="card-left">
-        <img src="images/illustration-woman-online-desktop.svg">
+        <img src="images/bg-pattern-desktop.svg" class="img-pattern">
+        <img src="images/illustration-woman-online-desktop.svg" class="img-desktop">
+        <img src="images/illustration-box-desktop.svg" class="img-box">
+
       </div>
 
       <div class="card-right">
 
         <h1>FAQ</h1>
 
-        <div>
-          <label for="checkbox-1">How many team members can I invite?</label>
-          <input type="checkbox" id="checkbox-1">
+        <div class="acc-row">
+          <input type="radio" id="acc-row-1" name="accordion">
+          <label for="acc-row-1">How many team members can I invite?<img src="images/icon-arrow-down.svg" class="icon-arrow"></label>
           <p> You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
         </div>
 
         <hr>
 
-        <div>
-          <label for="checkbox-2">What is the maximum file upload size?</label>
-          <input type="checkbox" id="checkbox-2">
+        <div class="acc-row">
+          <input type="radio" id="acc-row-2" name="accordion">
+          <label for="acc-row-2">What is the maximum file upload size?<img src="images/icon-arrow-down.svg" class="icon-arrow"></label>
           <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
         </div>
 
         <hr>
 
-        <div>
-          <label for="checkbox-3">How do I reset my password?</label>
-          <input type="checkbox" id="checkbox-3">
+        <div class="acc-row">
+          <input type="radio" id="acc-row-3" name="accordion">
+          <label for="acc-row-3">How do I reset my password?<img src="images/icon-arrow-down.svg" class="icon-arrow"></label>
           <p> Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
         </div>
 
         <hr>
 
-        <div>
-          <label for="checkbox-4">Can I cancel my subscription?</label>
-          <input type="checkbox" id="checkbox-4">
-          <p>Yes! Send us a message and we’ll process your request no questions asked.</p></div>
+        <div class="acc-row">
+          <input type="radio" id="acc-row-4" name="accordion">
+          <label for="acc-row-4">Can I cancel my subscription?<img src="images/icon-arrow-down.svg" class="icon-arrow"></label>
+          <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+        </div>
+
         <hr>
 
-        <div>
-          <label for="checkbox-5">Do you provide additional support?</label>
-          <input type="checkbox" id="checkbox-5">
+        <div class="acc-row">
+          <input type="radio" id="acc-row-5" name="accordion">
+          <label for="acc-row-5">Do you provide additional support?<img src="images/icon-arrow-down.svg" class="icon-arrow"></label>
           <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
         </div>
 

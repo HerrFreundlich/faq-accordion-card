@@ -1,12 +1,16 @@
 html {
+    font-family: 'Kumbh Sans', sans-serif;
     width: 100%;
     height: 100%;
+
 }
 
 body {
     width: 100%;
     height: 100%;
     display: flex;
+    align-items: center;
+    margin: 0;
 }
 
 .background-left {
@@ -22,6 +26,7 @@ body {
 
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .background-right {
@@ -32,15 +37,101 @@ body {
 
 .card {
     display: flex;
+    justify-content: center;
+    width: 1680px;
+    height: 550px;
     background-color: white;
-    padding: 5%;
     border-radius: 25px;
 }
 
-input + p {
+.card-left {
+    position: relative;
+    width: 50%;
+}
+
+.card-right {
+    width: 50%;
+    padding: 50px 100px 70px 0;
+}
+
+/*-----Styling Illustration-----*/
+
+.card-left img {
+    position: absolute;
+}
+
+.img-box {
+    top: 233px;
+    right: 356px;
+}
+
+.img-desktop {
+    clip-path: inset(100% 82% 100% 100%);
+    top: 100px;
+    right: 67px;
+}
+
+.img-pattern {
+    clip-path: inset(86.5% 40% 71.8% 100%);
+    top: -267px;
+    right: 68px;
+}
+
+.background-left {
+}
+/*-----Styling Accordion-----*/
+
+h1 {
+    color: hsl(238, 29%, 16%);
+}
+
+label {
+
+    height: 40px;
+    display: block;
+    padding-right: 50px;
+    color: hsl(240, 6%, 50%);
+}
+
+label:hover {
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+}
+
+P {
+    margin-top: 0;
+    padding-right: 20px;
+    color: #630000;
+}
+
+hr {
+    border-color: hsl(240, 5%, 91%);
+    opacity: 0.4;
+}
+
+.acc-row {
+    position: relative;
+}
+
+.icon-arrow {
+    position: absolute;
+    right: 0;
+    transform: rotate(270deg);
+}
+
+input:checked ~ label .icon-arrow {
+    transform: rotate(0deg);
+}
+
+input, input ~ p {
     display: none;
 }
 
-input:checked + p {
+input:checked ~ p {
     display: block;
+}
+
+input:checked ~ label {
+    color:hsl(238, 29%, 16%);
+    font-weight: 700;
 }
