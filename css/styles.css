@@ -133,7 +133,8 @@ input:checked ~ label {
     }
 
     .card {
-        width: 340px;
+        width:80%;
+        max-width: 340px;
         height: 550px;
         display: flex;
         flex-direction: column;
@@ -142,13 +143,15 @@ input:checked ~ label {
     }
 
     .card-right {
-        width: 340px;
+        width: 100%;
+        max-width: 340px;
         height: 80%;
         padding: 0;
     }
 
     .card-left {
-        width: 340px;
+        width: 100%;
+        max-width: 340px;
         height: 20%;
     }
 
