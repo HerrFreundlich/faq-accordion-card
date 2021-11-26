@@ -139,7 +139,7 @@ input:checked ~ label {
     .card {
         width:80%;
         max-width: 340px;
-        height: 550px;
+        height: 600px;
         display: flex;
         flex-direction: column;
         padding: 30px;
